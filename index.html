@@ -1,0 +1,1528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="My portfolio — my abstract and surrealist paintings, mosaic and murals. Iron Range, Minnesota.">
+<link rel="icon" href="data:,">
+<title>Corey Lee — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#05060F;
+    --bg-panel:#0A0D1D;
+    --cyan:#00F0FF;
+    --magenta:#FF2BD1;
+    --green:#39FF14;
+    --ice:#C9D6DF;
+    --ice-dim:#8FA3B3;
+    --line:rgba(0,240,255,.22);
+    --max:1320px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;color:var(--ice);
+    font-family:"Rajdhani",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:19px;line-height:1.55;font-weight:500;
+    -webkit-font-smoothing:antialiased;
+    background-color:var(--bg);
+    background-image:
+      linear-gradient(rgba(0,240,255,.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,240,255,.045) 1px, transparent 1px);
+    background-size:52px 52px;
+    overflow-x:hidden;
+  }
+  img{display:block;max-width:100%}
+  h1,h2{font-family:"Orbitron",sans-serif;margin:0;line-height:1.08;letter-spacing:.04em}
+  a{color:var(--cyan)}
+  :focus-visible{outline:3px solid var(--green);outline-offset:3px}
+
+  /* ---------- Header ---------- */
+  .site-head{
+    max-width:var(--max);margin:0 auto;
+    padding:24px 20px 6px;
+    display:flex;flex-direction:column;align-items:center;text-align:center;
+    background:radial-gradient(ellipse 62% 95% at 50% 42%, rgba(0,240,255,.08), transparent 70%);
+  }
+  .logo-sticker{
+    width:clamp(190px,44vw,264px);height:auto;
+    filter:drop-shadow(0 0 16px rgba(255,36,66,.32)) drop-shadow(0 12px 26px rgba(0,0,0,.65));
+  }
+  .head-text{min-width:0;margin-top:2px}
+  h1{
+    font-size:clamp(2.7rem,9vw,5.4rem);font-weight:900;color:#EAFBFF;
+    text-shadow:0 0 6px rgba(0,240,255,.9), 0 0 22px rgba(0,240,255,.55), 0 0 54px rgba(0,240,255,.3), 3px 3px 0 rgba(255,43,209,.45);
+  }
+  .subline{
+    margin:10px auto 0;font-size:clamp(1.05rem,3.4vw,1.3rem);max-width:58ch;
+    color:var(--cyan);font-weight:600;letter-spacing:.04em;line-height:1.45;
+  }
+  .head-nav{
+    max-width:var(--max);margin:0 auto;padding:18px 20px 0;
+    display:flex;gap:10px;flex-wrap:wrap;justify-content:center;
+  }
+  .head-nav a{
+    display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;
+    color:var(--ice);text-decoration:none;font-weight:700;font-size:1rem;
+    letter-spacing:.14em;text-transform:uppercase;
+    border:1px solid var(--line);background:rgba(10,13,29,.72);
+  }
+  .head-nav a:hover{border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 14px rgba(0,240,255,.35), inset 0 0 12px rgba(0,240,255,.08)}
+  .head-nav a.buy-prints{
+    border-color:var(--magenta);color:#1C0313;background:var(--magenta);
+    box-shadow:0 0 18px rgba(255,43,209,.55), 0 6px 18px rgba(0,0,0,.5);
+  }
+  .head-nav a.buy-prints:hover{
+    border-color:#FF7AE7;color:#000;background:#FF5BDB;
+    box-shadow:0 0 26px rgba(255,43,209,.85), 0 6px 18px rgba(0,0,0,.5);
+  }
+
+  /* ---------- Shop call-to-action ---------- */
+  .shop-banner{
+    display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    margin:0 0 24px;padding:18px 20px;
+    border:1px solid rgba(255,43,209,.55);background:rgba(255,43,209,.09);
+    box-shadow:0 0 22px rgba(255,43,209,.22), inset 0 0 24px rgba(255,43,209,.06);
+  }
+  .shop-banner p{margin:0;font-size:1.15rem;color:var(--ice);max-width:52ch}
+  .shop-banner p b{color:#FFE9FB}
+  .shop-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    min-height:58px;padding:14px 32px;flex:0 0 auto;
+    background:var(--magenta);color:#1C0313;text-decoration:none;
+    font-family:"Orbitron",sans-serif;font-weight:800;font-size:1.08rem;letter-spacing:.12em;text-transform:uppercase;
+    box-shadow:0 0 22px rgba(255,43,209,.6), 0 8px 22px rgba(0,0,0,.55);
+  }
+  .shop-btn:hover{background:#FF5BDB;color:#000;box-shadow:0 0 32px rgba(255,43,209,.85), 0 8px 22px rgba(0,0,0,.55)}
+  @media (max-width:680px){ .shop-btn{width:100%} }
+  .foot-shop{margin:0 0 20px}
+
+  /* ---------- Sections ---------- */
+  section{max-width:var(--max);margin:0 auto;padding:46px 20px 10px}
+  .section-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+  h2{
+    font-size:clamp(1.8rem,6vw,2.9rem);font-weight:800;color:#EAFBFF;
+    text-shadow:0 0 5px rgba(0,240,255,.85), 0 0 20px rgba(0,240,255,.45), 0 0 44px rgba(0,240,255,.22);
+  }
+  h2.magenta{text-shadow:0 0 5px rgba(255,43,209,.85), 0 0 20px rgba(255,43,209,.45), 0 0 44px rgba(255,43,209,.22)}
+  .count{font-weight:600;color:var(--ice-dim);font-size:1.05rem;letter-spacing:.04em}
+  .count b{color:var(--cyan);font-weight:700}
+
+  /* ---------- About (top) ---------- */
+  .about-grid{display:grid;gap:30px;align-items:start}
+  .portrait-frame{
+    border:1px solid var(--cyan);padding:8px;background:var(--bg-panel);
+    box-shadow:0 0 22px rgba(0,240,255,.3), 10px 10px 0 rgba(255,43,209,.28);
+    max-width:440px;
+  }
+  .portrait-frame img{width:100%;height:auto;background:#000}
+  .about-text p{margin:0 0 18px;max-width:62ch;font-size:1.18rem;color:var(--ice)}
+  .about-text p:first-child{font-size:1.28rem}
+  .contact-info{
+    margin:0 0 18px;padding:14px 16px;
+    border:1px solid var(--line);background:rgba(10,13,29,.72);
+    font-size:1.12rem;line-height:1.5;
+  }
+  .contact-label{
+    display:block;font-family:"Orbitron",sans-serif;font-weight:700;font-size:.82rem;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--magenta);
+    text-shadow:0 0 10px rgba(255,43,209,.5);margin-bottom:6px;
+  }
+  .contact-info a{color:var(--cyan);font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+  .contact-info a:hover{text-decoration:underline;text-shadow:0 0 12px rgba(0,240,255,.5)}
+  .contact-sep{color:var(--ice-dim);margin:0 6px}
+  .contact-fb{color:var(--ice);font-weight:600;white-space:nowrap}
+  .venmo{
+    display:inline-flex;align-items:center;min-height:44px;
+    font-weight:700;font-size:1.2rem;color:var(--cyan);letter-spacing:.03em;
+    border-bottom:3px solid var(--green);padding-bottom:2px;
+    text-shadow:0 0 12px rgba(0,240,255,.4);
+  }
+  .venmo-qr{
+    display:inline-block;background:#fff;padding:14px 14px 10px;text-decoration:none;
+    border:1px solid var(--cyan);
+    box-shadow:0 0 22px rgba(0,240,255,.3), 8px 8px 0 rgba(255,43,209,.28);
+  }
+  .venmo-qr img{width:196px;height:196px}
+  .venmo-qr-cap{
+    display:block;text-align:center;color:#0A0D1D;font-weight:700;
+    font-size:1rem;letter-spacing:.06em;padding-top:8px;line-height:1.3;
+  }
+  .venmo-qr:hover{box-shadow:0 0 30px rgba(0,240,255,.55), 8px 8px 0 rgba(255,43,209,.28)}
+  @media (min-width:760px){ .about-grid{grid-template-columns:380px 1fr;gap:44px} }
+
+  /* ---------- Portfolio grid: big images, natural ratios, frames float on the dark ---------- */
+  .grid{columns:1;column-gap:30px}
+  .work{margin:0 0 30px;break-inside:avoid}
+  .work-btn{
+    display:block;width:100%;padding:0;margin:0;border:0;background:none;cursor:pointer;
+    min-height:44px;
+  }
+  .work-btn img{
+    width:100%;height:auto;margin:0 auto;
+    transition:transform .2s ease, filter .2s ease;
+    filter:drop-shadow(0 6px 18px rgba(0,0,0,.55));
+  }
+  .work-btn:hover img,.work-btn:focus-visible img{
+    transform:translateY(-4px);
+    filter:drop-shadow(0 0 16px rgba(0,240,255,.5)) drop-shadow(0 0 44px rgba(255,43,209,.22)) drop-shadow(0 10px 22px rgba(0,0,0,.6));
+  }
+  @media (min-width:680px){ .grid{columns:2;column-gap:34px} .work{margin-bottom:34px} }
+  @media (min-width:1080px){ .grid{columns:3;column-gap:38px} .work{margin-bottom:38px} }
+
+  [hidden]{display:none !important}
+
+  /* ---------- View toggle ---------- */
+  .view-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:0 0 18px}
+  .view-mode{color:var(--ice-dim);letter-spacing:.16em;text-transform:uppercase;font-size:.95rem;font-weight:600}
+  .view-toggle{
+    display:inline-flex;align-items:center;min-height:44px;padding:8px 20px;
+    background:rgba(10,13,29,.8);color:var(--cyan);border:1px solid var(--cyan);
+    font:inherit;font-weight:700;font-size:1rem;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;border-radius:0;
+  }
+  .view-toggle:hover{box-shadow:0 0 16px rgba(0,240,255,.45), inset 0 0 12px rgba(0,240,255,.1);color:#EAFBFF}
+
+  /* ---------- Gallery room: walk the wall ---------- */
+  .gallery-room{
+    position:relative;overflow:hidden;
+    border:1px solid var(--line);
+    background:linear-gradient(180deg,#080A16 0%,#05060F 58%,#03040A 100%);
+    box-shadow:inset 0 0 90px rgba(0,0,0,.8), 0 0 26px rgba(0,240,255,.12);
+  }
+  .gallery-room::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;z-index:3;pointer-events:none;
+    background:linear-gradient(90deg,var(--cyan),var(--magenta) 55%,var(--cyan));
+    box-shadow:0 0 16px rgba(0,240,255,.7), 0 0 34px rgba(255,43,209,.4);
+  }
+  .wall-scroll{
+    overflow-x:auto;overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;-webkit-overflow-scrolling:touch;
+    cursor:grab;outline-offset:-3px;
+  }
+  .wall-scroll::-webkit-scrollbar{display:none}
+  .wall-scroll.dragging{cursor:grabbing;scroll-snap-type:none}
+  .wall-track{display:flex}
+  .bay{
+    position:relative;flex:0 0 100%;scroll-snap-align:center;
+    display:flex;align-items:center;justify-content:center;
+    padding:54px 18px 44px;min-height:min(74vh,660px);
+  }
+  .bay::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse 64% 54% at 50% 42%, rgba(0,240,255,.13), rgba(255,43,209,.05) 55%, transparent 74%);
+  }
+  .bay::after{
+    content:"";position:absolute;left:50%;bottom:24px;transform:translateX(-50%);
+    width:min(64%,430px);height:28px;pointer-events:none;
+    background:radial-gradient(ellipse at center, rgba(0,240,255,.3), transparent 70%);
+    filter:blur(6px);
+  }
+  .bay-btn{
+    position:relative;z-index:1;width:auto;max-width:100%;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .bay-btn img{
+    width:auto;height:auto;max-width:min(100%,540px);max-height:56vh;
+    filter:drop-shadow(18px 24px 30px rgba(0,0,0,.85)) drop-shadow(0 0 18px rgba(0,240,255,.22));
+  }
+  .bay-btn:hover img,.bay-btn:focus-visible img{
+    transform:translateY(-4px);
+    filter:drop-shadow(18px 24px 30px rgba(0,0,0,.85)) drop-shadow(0 0 22px rgba(0,240,255,.55)) drop-shadow(0 0 52px rgba(255,43,209,.25));
+  }
+  .room-floor{
+    position:relative;height:96px;overflow:hidden;
+    border-top:1px solid rgba(0,240,255,.35);
+    background:#04050C;perspective:280px;
+    box-shadow:inset 0 20px 26px rgba(0,0,0,.85);
+  }
+  .room-floor::before{
+    content:"";position:absolute;left:-12%;right:-12%;top:0;height:340px;
+    background-image:
+      linear-gradient(rgba(0,240,255,.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,240,255,.4) 1px, transparent 1px);
+    background-size:54px 54px;
+    transform:rotateX(64deg);transform-origin:top center;
+  }
+  .room-floor::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(0,240,255,.14), rgba(255,43,209,.05) 55%, rgba(0,0,0,.55));
+  }
+  .wall-controls{
+    position:relative;z-index:2;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:12px 14px calc(12px + env(safe-area-inset-bottom));
+    border-top:1px solid var(--line);background:rgba(5,6,15,.94);
+  }
+  .wall-progress{display:flex;flex-direction:column;align-items:center;gap:7px;flex:1 1 auto;min-width:0}
+  .wall-counter{
+    font-weight:700;color:var(--cyan);letter-spacing:.12em;font-variant-numeric:tabular-nums;
+    text-shadow:0 0 10px rgba(0,240,255,.5);white-space:nowrap;
+  }
+  .wall-trackbar{display:block;width:min(320px,58vw);height:3px;background:rgba(0,240,255,.18)}
+  .wall-fill{
+    display:block;height:100%;width:1.35%;
+    background:linear-gradient(90deg,var(--cyan),var(--magenta));
+    box-shadow:0 0 10px rgba(0,240,255,.6);
+    transition:width .25s ease;
+  }
+  /* ---------- Overlay arrows ON the painting: visible from the first piece, every size ---------- */
+  .wall-overlay-arrow{
+    position:absolute;top:calc(50% - 84px);transform:translateY(-50%);z-index:5;
+    display:flex;align-items:center;justify-content:center;
+    width:64px;height:64px;padding:0;
+    background:rgba(5,6,15,.88);color:#EAFBFF;
+    border:2px solid var(--cyan);border-radius:0;cursor:pointer;
+    font-family:inherit;font-size:2rem;font-weight:700;line-height:1;
+    text-shadow:0 0 10px rgba(0,240,255,.8);
+    box-shadow:0 0 18px rgba(0,240,255,.55), 0 0 44px rgba(255,43,209,.25), 0 10px 24px rgba(0,0,0,.7), inset 0 0 14px rgba(0,240,255,.14);
+  }
+  .wall-overlay-arrow.prev{left:12px}
+  .wall-overlay-arrow.next{right:12px;border-color:var(--magenta);text-shadow:0 0 10px rgba(255,43,209,.8);box-shadow:0 0 18px rgba(255,43,209,.55), 0 0 44px rgba(0,240,255,.25), 0 10px 24px rgba(0,0,0,.7), inset 0 0 14px rgba(255,43,209,.14)}
+  .wall-overlay-arrow:hover,.wall-overlay-arrow:focus-visible{color:#fff;box-shadow:0 0 26px rgba(0,240,255,.85), 0 0 60px rgba(255,43,209,.35), 0 10px 24px rgba(0,0,0,.7)}
+  .wall-overlay-arrow:active{border-color:var(--green);color:var(--green)}
+  .wall-overlay-arrow[disabled]{opacity:.45;box-shadow:0 8px 20px rgba(0,0,0,.6)}
+  @media (max-width:680px){
+    .wall-arrow{padding:10px 12px;font-size:.95rem;min-width:0}
+    .bay{min-height:0;padding:44px 14px 38px} .bay-btn img{max-height:52vh}
+    .wall-overlay-arrow{width:58px;height:58px;font-size:1.8rem;top:calc(50% - 80px)}
+    .wall-overlay-arrow.prev{left:8px}
+    .wall-overlay-arrow.next{right:8px}
+  }
+
+  /* ---------- View-all pager: fixed arrows + position readout ---------- */
+  .grid-arrow{
+    position:fixed;top:50%;transform:translateY(-50%);z-index:40;
+    font-size:1.45rem;line-height:1;padding:10px 15px;
+    box-shadow:0 0 16px rgba(0,240,255,.35), 0 8px 22px rgba(0,0,0,.65);
+  }
+  .grid-arrow.prev{left:10px}
+  .grid-arrow.next{right:10px}
+  .grid-arrow[disabled]{opacity:.28;pointer-events:none;box-shadow:none}
+  .grid-counter{
+    position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:40;
+    padding:8px 16px;background:rgba(5,6,15,.94);border:1px solid var(--line);
+    font-weight:700;color:var(--cyan);letter-spacing:.12em;font-variant-numeric:tabular-nums;white-space:nowrap;
+    text-shadow:0 0 10px rgba(0,240,255,.5);
+  }
+
+  /* ---------- Doorway transition between rooms ---------- */
+  .doorway{max-width:var(--max);margin:0 auto;padding:10px 20px 0}
+  .doorway-panel{
+    position:relative;overflow:hidden;text-align:center;
+    padding:clamp(58px,10vw,108px) 22px;
+    border:1px solid rgba(255,43,209,.45);
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 40%, rgba(255,43,209,.14), transparent 72%),
+      linear-gradient(180deg,#080A16,#03040A);
+    box-shadow:inset 0 0 90px rgba(0,0,0,.8), 0 0 26px rgba(255,43,209,.15);
+  }
+  .doorway-panel::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;pointer-events:none;
+    background:linear-gradient(90deg,var(--magenta),var(--cyan) 55%,var(--magenta));
+    box-shadow:0 0 16px rgba(255,43,209,.7), 0 0 34px rgba(0,240,255,.4);
+  }
+  .doorway-panel::after{
+    content:"";position:absolute;inset:14px;pointer-events:none;
+    border:1px solid rgba(0,240,255,.25);
+  }
+  .doorway-title{
+    font-size:clamp(2rem,7vw,3.6rem);font-weight:800;color:#FFF0FC;
+    text-shadow:0 0 5px rgba(255,43,209,.85), 0 0 22px rgba(255,43,209,.5), 0 0 48px rgba(255,43,209,.25), 3px 3px 0 rgba(0,240,255,.35);
+  }
+  .doorway-sub{margin:16px auto 0;max-width:52ch;color:var(--ice-dim);font-size:1.12rem}
+  .door-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    min-height:56px;padding:12px 36px;margin-top:28px;position:relative;z-index:1;
+    background:var(--bg-panel);color:var(--magenta);border:1px solid var(--magenta);
+    font:inherit;font-weight:700;font-size:1.15rem;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;border-radius:0;
+  }
+  .door-btn:hover{box-shadow:0 0 18px rgba(255,43,209,.5), inset 0 0 12px rgba(255,43,209,.12);color:#FFE9FB}
+  .door-btn:active{border-color:var(--cyan);color:var(--cyan)}
+  .room-back{margin:0 0 22px}
+  #mosaic.room-enter{animation:roomIn .7s ease both}
+  @keyframes roomIn{
+    from{opacity:0;clip-path:inset(0 50% 0 50%);transform:translateY(16px)}
+    to{opacity:1;clip-path:inset(0 0 0 0);transform:translateY(0)}
+  }
+
+  /* ---------- Splatter divider ---------- */
+  .splatter{margin:56px 0 0;line-height:0}
+  .splatter img{width:100%;height:auto;filter:drop-shadow(0 0 14px rgba(0,240,255,.35))}
+
+  /* ---------- Mosaic & murals ---------- */
+  .mural-wrap{
+    max-width:1020px;margin:0 auto;position:relative;
+    padding:40px 20px 28px;
+    border:1px solid rgba(255,43,209,.32);
+    background:
+      radial-gradient(ellipse 72% 58% at 50% 36%, rgba(255,43,209,.12), transparent 72%),
+      linear-gradient(180deg,#080A16,#03040A);
+    box-shadow:inset 0 0 80px rgba(0,0,0,.75), 0 0 26px rgba(255,43,209,.12);
+  }
+  .mural-frame{
+    max-width:900px;margin:0 auto;
+    border:1px solid var(--magenta);padding:8px;background:var(--bg-panel);
+    box-shadow:0 0 22px rgba(255,43,209,.28), 0 0 44px rgba(0,240,255,.12), 18px 24px 34px rgba(0,0,0,.7);
+  }
+  .mural-frame img{width:100%;height:auto}
+  .mural-wrap + .mural-wrap{margin-top:38px}
+  .mural-photo{width:100%;height:auto;max-width:900px;margin:0 auto;box-shadow:18px 24px 34px rgba(0,0,0,.7)}
+  .caption{margin:16px 0 0;font-size:1.15rem;color:var(--ice-dim);text-align:center;letter-spacing:.05em}
+  .caption b{color:var(--ice)}
+
+  /* ---------- Footer ---------- */
+  footer{
+    margin-top:70px;border-top:1px solid var(--line);
+    padding:28px 20px 44px;text-align:center;color:var(--ice-dim);font-size:1rem;letter-spacing:.06em;
+  }
+  footer .foot-name{font-family:"Orbitron",sans-serif;font-weight:700;color:var(--cyan)}
+
+  /* ---------- Lightbox ---------- */
+  .lightbox{
+    position:fixed;inset:0;z-index:60;background:var(--bg);
+    background-image:
+      linear-gradient(rgba(0,240,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,240,255,.04) 1px, transparent 1px);
+    background-size:52px 52px;
+    display:none;flex-direction:column;
+  }
+  .lightbox.open{display:flex}
+  .lb-top{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:10px 14px;border-bottom:1px solid var(--line);flex:0 0 auto;background:rgba(5,6,15,.92);
+  }
+  .lb-counter{font-weight:700;color:var(--cyan);font-variant-numeric:tabular-nums;min-width:74px;letter-spacing:.08em;text-shadow:0 0 10px rgba(0,240,255,.5)}
+  .lb-title{font-family:"Orbitron",sans-serif;font-weight:700;color:#EAFBFF;font-size:1rem;letter-spacing:.1em;text-shadow:0 0 10px rgba(0,240,255,.6)}
+  .lb-stage{flex:1 1 auto;display:flex;align-items:center;justify-content:center;min-height:0;padding:16px 10px}
+  .lb-stage img{
+    max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;
+    filter:drop-shadow(0 0 20px rgba(0,240,255,.3)) drop-shadow(0 0 52px rgba(255,43,209,.14));
+  }
+  .lb-controls{
+    flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:rgba(5,6,15,.92);
+  }
+  .lb-btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    min-width:52px;min-height:52px;padding:10px 18px;
+    background:var(--bg-panel);color:var(--cyan);border:1px solid var(--cyan);
+    font:inherit;font-weight:700;font-size:1rem;letter-spacing:.06em;cursor:pointer;border-radius:0;
+  }
+  .lb-btn:hover{box-shadow:0 0 16px rgba(0,240,255,.45), inset 0 0 12px rgba(0,240,255,.1);color:#EAFBFF}
+  .lb-btn:active{border-color:var(--green);color:var(--green)}
+  .lb-close{min-width:52px;padding:10px 14px;font-size:1.35rem;line-height:1}
+  .lb-hint{color:var(--ice-dim);font-size:.95rem;text-align:center}
+  @media (max-width:560px){ .lb-hint{display:none} .lb-title{display:none} }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .work-btn img{transition:none}
+    #mosaic.room-enter{animation:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="site-head">
+    <img class="logo-sticker" src="img/img-001.png" width="1306" height="1278" alt="My hand-drawn logo">
+    <div class="head-text">
+      <h1>COREY LEE</h1>
+      <p class="subline">Visual artist. Objects, pigments and mediums of all kinds fall into my artistic creations.</p>
+    </div>
+  </div>
+  <nav class="head-nav" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#mosaic">Mosaic &amp; Murals</a>
+    <a class="buy-prints" href="https://fineartamerica.com/profiles/1-corey-templin" target="_blank" rel="noopener" aria-label="Buy prints — my Fine Art America shop (opens in a new tab)">Buy prints</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about" aria-labelledby="about-h">
+    <div class="section-head">
+      <h2 id="about-h">About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="portrait-frame">
+        <img src="img/img-002.jpg" width="1536" height="2048" decoding="async" fetchpriority="high" alt="Black-and-white portrait of me wearing a cap, smiling beside large lilies in a garden">
+      </div>
+      <div class="about-text">
+        <p>I am a multi-medium artist from the Iron Range in Minnesota. I work in rattle cans, acrylics, pens, markers &mdash; and even objects at times &mdash; across abstract and surrealist work. I am also a graphic designer.</p>
+        <div class="contact-info">
+          <span class="contact-label">Contact</span>
+          <a href="mailto:creatorcoreyone@gmail.com">creatorcoreyone@gmail.com</a><span class="contact-sep" aria-hidden="true">&mdash;</span><a class="contact-fb" href="https://www.facebook.com/coreyterpenoid" target="_blank" rel="noopener">Find me on FB</a>
+        </div>
+        <p><span class="venmo">Venmo: @Corey-Templin</span></p>
+        <p>
+          <a class="venmo-qr" href="https://venmo.com/code?user_id=4368170760537767638&created=1794203598" target="_blank" rel="noopener" aria-label="Open my Venmo profile">
+            <img src="img/img-003.png" width="820" height="820" alt="My Venmo QR code (@Corey-Templin) — scan to pay">
+            <span class="venmo-qr-cap">Scan to pay on Venmo</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" aria-labelledby="portfolio-h">
+    <div class="section-head">
+      <h2 id="portfolio-h">Portfolio</h2>
+      <p class="count"><b>74</b> paintings &mdash; tap any painting to see it full size</p>
+    </div>
+    <div class="shop-banner">
+      <p><b>Want one on your wall?</b> Prints of these paintings are for sale in my Fine Art America shop &mdash; canvas prints, framed prints, and greeting cards.</p>
+      <a class="shop-btn" href="https://fineartamerica.com/profiles/1-corey-templin" target="_blank" rel="noopener">Buy prints</a>
+    </div>
+    <div class="view-bar">
+      <span class="view-mode" id="viewModeLabel">Walking the wall</span>
+      <button class="view-toggle" id="viewToggle" type="button" aria-expanded="false">View all</button>
+    </div>
+    <div class="gallery-room" id="galleryRoom">
+      <button class="wall-overlay-arrow prev" id="wallPrevOverlay" type="button" aria-label="Previous painting on the wall">&#8592;</button>
+      <button class="wall-overlay-arrow next" id="wallNextOverlay" type="button" aria-label="Next painting on the wall">&#8594;</button>
+      <div class="wall-scroll" id="wallScroll" tabindex="0" aria-label="Gallery wall. Scroll sideways, swipe, or drag to walk past each painting.">
+        <div class="wall-track" id="wallTrack">
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="0" aria-label="View painting 1 of 74 full size">
+            <img src="img/img-004.jpg" width="989" height="1084" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="1" aria-label="View painting 2 of 74 full size">
+            <img src="img/img-005.jpg" width="1084" height="651" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="2" aria-label="View painting 3 of 74 full size">
+            <img src="img/img-006.jpg" width="930" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="3" aria-label="View painting 4 of 74 full size">
+            <img src="img/img-007.jpg" width="785" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="4" aria-label="View painting 5 of 74 full size">
+            <img src="img/img-008.jpg" width="878" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="5" aria-label="View painting 6 of 74 full size">
+            <img src="img/img-009.jpg" width="934" height="1077" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="6" aria-label="View painting 7 of 74 full size">
+            <img src="img/img-010.jpg" width="942" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="7" aria-label="View painting 8 of 74 full size">
+            <img src="img/img-011.jpg" width="1084" height="905" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="8" aria-label="View painting 9 of 74 full size">
+            <img src="img/img-012.jpg" width="830" height="1092" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="9" aria-label="View painting 10 of 74 full size">
+            <img src="img/img-013.jpg" width="1020" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="10" aria-label="View painting 11 of 74 full size">
+            <img src="img/img-014.jpg" width="1079" height="948" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="11" aria-label="View painting 12 of 74 full size">
+            <img src="img/img-015.jpg" width="999" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="12" aria-label="View painting 13 of 74 full size">
+            <img src="img/img-016.jpg" width="947" height="1078" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="13" aria-label="View painting 14 of 74 full size">
+            <img src="img/img-017.jpg" width="906" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="14" aria-label="View painting 15 of 74 full size">
+            <img src="img/img-018.jpg" width="277" height="1058" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="15" aria-label="View painting 16 of 74 full size">
+            <img src="img/img-019.jpg" width="950" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="16" aria-label="View painting 17 of 74 full size">
+            <img src="img/img-020.jpg" width="928" height="1077" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="17" aria-label="View painting 18 of 74 full size">
+            <img src="img/img-021.jpg" width="954" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="18" aria-label="View painting 19 of 74 full size">
+            <img src="img/img-022.jpg" width="1028" height="1017" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="19" aria-label="View painting 20 of 74 full size">
+            <img src="img/img-023.jpg" width="1038" height="1065" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="20" aria-label="View painting 21 of 74 full size">
+            <img src="img/img-024.jpg" width="1100" height="712" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="21" aria-label="View painting 22 of 74 full size">
+            <img src="img/img-025.jpg" width="892" height="1062" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="22" aria-label="View painting 23 of 74 full size">
+            <img src="img/img-026.jpg" width="1034" height="1075" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="23" aria-label="View painting 24 of 74 full size">
+            <img src="img/img-027.jpg" width="1065" height="898" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="24" aria-label="View painting 25 of 74 full size">
+            <img src="img/img-028.jpg" width="1004" height="1078" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="25" aria-label="View painting 26 of 74 full size">
+            <img src="img/img-029.jpg" width="936" height="1005" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="26" aria-label="View painting 27 of 74 full size">
+            <img src="img/img-030.jpg" width="1078" height="1012" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="27" aria-label="View painting 28 of 74 full size">
+            <img src="img/img-031.jpg" width="704" height="1091" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="28" aria-label="View painting 29 of 74 full size">
+            <img src="img/img-032.jpg" width="1100" height="861" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="29" aria-label="View painting 30 of 74 full size">
+            <img src="img/img-033.jpg" width="1091" height="939" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="30" aria-label="View painting 31 of 74 full size">
+            <img src="img/img-034.jpg" width="1094" height="914" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="31" aria-label="View painting 32 of 74 full size">
+            <img src="img/img-035.jpg" width="908" height="653" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="32" aria-label="View painting 33 of 74 full size">
+            <img src="img/img-036.jpg" width="1085" height="968" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="33" aria-label="View painting 34 of 74 full size">
+            <img src="img/img-037.jpg" width="917" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="34" aria-label="View painting 35 of 74 full size">
+            <img src="img/img-038.jpg" width="909" height="1031" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="35" aria-label="View painting 36 of 74 full size">
+            <img src="img/img-039.jpg" width="502" height="561" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="36" aria-label="View painting 37 of 74 full size">
+            <img src="img/img-040.jpg" width="1046" height="1052" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="37" aria-label="View painting 38 of 74 full size">
+            <img src="img/img-041.jpg" width="1078" height="1001" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="38" aria-label="View painting 39 of 74 full size">
+            <img src="img/img-042.jpg" width="769" height="631" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="39" aria-label="View painting 40 of 74 full size">
+            <img src="img/img-043.jpg" width="934" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="40" aria-label="View painting 41 of 74 full size">
+            <img src="img/img-044.jpg" width="1091" height="916" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="41" aria-label="View painting 42 of 74 full size">
+            <img src="img/img-045.jpg" width="954" height="1085" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="42" aria-label="View painting 43 of 74 full size">
+            <img src="img/img-046.jpg" width="1100" height="905" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="43" aria-label="View painting 44 of 74 full size">
+            <img src="img/img-047.jpg" width="602" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="44" aria-label="View painting 45 of 74 full size">
+            <img src="img/img-048.jpg" width="1031" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="45" aria-label="View painting 46 of 74 full size">
+            <img src="img/img-049.jpg" width="926" height="1061" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="46" aria-label="View painting 47 of 74 full size">
+            <img src="img/img-050.jpg" width="954" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="47" aria-label="View painting 48 of 74 full size">
+            <img src="img/img-051.jpg" width="884" height="1042" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="48" aria-label="View painting 49 of 74 full size">
+            <img src="img/img-052.jpg" width="936" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="49" aria-label="View painting 50 of 74 full size">
+            <img src="img/img-053.jpg" width="944" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="50" aria-label="View painting 51 of 74 full size">
+            <img src="img/img-054.jpg" width="971" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="51" aria-label="View painting 52 of 74 full size">
+            <img src="img/img-055.jpg" width="659" height="776" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="52" aria-label="View painting 53 of 74 full size">
+            <img src="img/img-056.jpg" width="847" height="1018" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="53" aria-label="View painting 54 of 74 full size">
+            <img src="img/img-057.jpg" width="1044" height="741" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="54" aria-label="View painting 55 of 74 full size">
+            <img src="img/img-058.jpg" width="1037" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="55" aria-label="View painting 56 of 74 full size">
+            <img src="img/img-059.jpg" width="920" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="56" aria-label="View painting 57 of 74 full size">
+            <img src="img/img-060.jpg" width="1026" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="57" aria-label="View painting 58 of 74 full size">
+            <img src="img/img-061.jpg" width="1026" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="58" aria-label="View painting 59 of 74 full size">
+            <img src="img/img-062.jpg" width="1054" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="59" aria-label="View painting 60 of 74 full size">
+            <img src="img/img-063.jpg" width="1032" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="60" aria-label="View painting 61 of 74 full size">
+            <img src="img/img-064.jpg" width="1021" height="835" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="61" aria-label="View painting 62 of 74 full size">
+            <img src="img/img-065.jpg" width="998" height="429" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="62" aria-label="View painting 63 of 74 full size">
+            <img src="img/img-066.jpg" width="631" height="809" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="63" aria-label="View painting 64 of 74 full size">
+            <img src="img/img-067.jpg" width="1071" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="64" aria-label="View painting 65 of 74 full size">
+            <img src="img/img-068.jpg" width="1062" height="1058" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="65" aria-label="View painting 66 of 74 full size">
+            <img src="img/img-069.jpg" width="998" height="1085" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="66" aria-label="View painting 67 of 74 full size">
+            <img src="img/img-070.jpg" width="867" height="1085" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="67" aria-label="View painting 68 of 74 full size">
+            <img src="img/img-071.jpg" width="874" height="1067" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="68" aria-label="View painting 69 of 74 full size">
+            <img src="img/img-072.jpg" width="889" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="69" aria-label="View painting 70 of 74 full size">
+            <img src="img/img-073.jpg" width="916" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="70" aria-label="View painting 71 of 74 full size">
+            <img src="img/img-074.jpg" width="864" height="1062" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="71" aria-label="View painting 72 of 74 full size">
+            <img src="img/img-075.jpg" width="1085" height="785" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="72" aria-label="View painting 73 of 74 full size">
+            <img src="img/img-076.jpg" width="1082" height="956" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+        <div class="bay">
+          <button class="work-btn bay-btn" type="button" data-index="73" aria-label="View painting 74 of 74 full size">
+            <img src="img/img-077.jpg" width="794" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </div>
+      </div>
+      </div>
+      <div class="room-floor" aria-hidden="true"></div>
+      <div class="wall-controls">
+        <button class="lb-btn wall-arrow" id="wallPrev" type="button" aria-label="Previous painting on the wall">&#8592; Prev</button>
+        <div class="wall-progress">
+          <span class="wall-counter" id="wallCounter">Piece 1 / 74</span>
+          <span class="wall-trackbar" aria-hidden="true"><span class="wall-fill" id="wallFill"></span></span>
+        </div>
+        <button class="lb-btn wall-arrow" id="wallNext" type="button" aria-label="Next painting on the wall">Next &#8594;</button>
+      </div>
+    </div>
+    <div class="grid" id="grid" hidden>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="0" aria-label="View painting 1 of 74 full size">
+            <img src="img/img-004.jpg" width="989" height="1084" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="1" aria-label="View painting 2 of 74 full size">
+            <img src="img/img-005.jpg" width="1084" height="651" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="2" aria-label="View painting 3 of 74 full size">
+            <img src="img/img-006.jpg" width="930" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="3" aria-label="View painting 4 of 74 full size">
+            <img src="img/img-007.jpg" width="785" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="4" aria-label="View painting 5 of 74 full size">
+            <img src="img/img-008.jpg" width="878" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="5" aria-label="View painting 6 of 74 full size">
+            <img src="img/img-009.jpg" width="934" height="1077" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="6" aria-label="View painting 7 of 74 full size">
+            <img src="img/img-010.jpg" width="942" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="7" aria-label="View painting 8 of 74 full size">
+            <img src="img/img-011.jpg" width="1084" height="905" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="8" aria-label="View painting 9 of 74 full size">
+            <img src="img/img-012.jpg" width="830" height="1092" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="9" aria-label="View painting 10 of 74 full size">
+            <img src="img/img-013.jpg" width="1020" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="10" aria-label="View painting 11 of 74 full size">
+            <img src="img/img-014.jpg" width="1079" height="948" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="11" aria-label="View painting 12 of 74 full size">
+            <img src="img/img-015.jpg" width="999" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="12" aria-label="View painting 13 of 74 full size">
+            <img src="img/img-016.jpg" width="947" height="1078" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="13" aria-label="View painting 14 of 74 full size">
+            <img src="img/img-017.jpg" width="906" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="14" aria-label="View painting 15 of 74 full size">
+            <img src="img/img-018.jpg" width="277" height="1058" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="15" aria-label="View painting 16 of 74 full size">
+            <img src="img/img-019.jpg" width="950" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="16" aria-label="View painting 17 of 74 full size">
+            <img src="img/img-020.jpg" width="928" height="1077" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="17" aria-label="View painting 18 of 74 full size">
+            <img src="img/img-021.jpg" width="954" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="18" aria-label="View painting 19 of 74 full size">
+            <img src="img/img-022.jpg" width="1028" height="1017" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="19" aria-label="View painting 20 of 74 full size">
+            <img src="img/img-023.jpg" width="1038" height="1065" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="20" aria-label="View painting 21 of 74 full size">
+            <img src="img/img-024.jpg" width="1100" height="712" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="21" aria-label="View painting 22 of 74 full size">
+            <img src="img/img-025.jpg" width="892" height="1062" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="22" aria-label="View painting 23 of 74 full size">
+            <img src="img/img-026.jpg" width="1034" height="1075" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="23" aria-label="View painting 24 of 74 full size">
+            <img src="img/img-027.jpg" width="1065" height="898" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="24" aria-label="View painting 25 of 74 full size">
+            <img src="img/img-028.jpg" width="1004" height="1078" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="25" aria-label="View painting 26 of 74 full size">
+            <img src="img/img-029.jpg" width="936" height="1005" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="26" aria-label="View painting 27 of 74 full size">
+            <img src="img/img-030.jpg" width="1078" height="1012" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="27" aria-label="View painting 28 of 74 full size">
+            <img src="img/img-031.jpg" width="704" height="1091" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="28" aria-label="View painting 29 of 74 full size">
+            <img src="img/img-032.jpg" width="1100" height="861" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="29" aria-label="View painting 30 of 74 full size">
+            <img src="img/img-033.jpg" width="1091" height="939" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="30" aria-label="View painting 31 of 74 full size">
+            <img src="img/img-034.jpg" width="1094" height="914" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="31" aria-label="View painting 32 of 74 full size">
+            <img src="img/img-035.jpg" width="908" height="653" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="32" aria-label="View painting 33 of 74 full size">
+            <img src="img/img-036.jpg" width="1085" height="968" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="33" aria-label="View painting 34 of 74 full size">
+            <img src="img/img-037.jpg" width="917" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="34" aria-label="View painting 35 of 74 full size">
+            <img src="img/img-038.jpg" width="909" height="1031" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="35" aria-label="View painting 36 of 74 full size">
+            <img src="img/img-039.jpg" width="502" height="561" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="36" aria-label="View painting 37 of 74 full size">
+            <img src="img/img-040.jpg" width="1046" height="1052" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="37" aria-label="View painting 38 of 74 full size">
+            <img src="img/img-041.jpg" width="1078" height="1001" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="38" aria-label="View painting 39 of 74 full size">
+            <img src="img/img-042.jpg" width="769" height="631" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="39" aria-label="View painting 40 of 74 full size">
+            <img src="img/img-043.jpg" width="934" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="40" aria-label="View painting 41 of 74 full size">
+            <img src="img/img-044.jpg" width="1091" height="916" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="41" aria-label="View painting 42 of 74 full size">
+            <img src="img/img-045.jpg" width="954" height="1085" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="42" aria-label="View painting 43 of 74 full size">
+            <img src="img/img-046.jpg" width="1100" height="905" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="43" aria-label="View painting 44 of 74 full size">
+            <img src="img/img-047.jpg" width="602" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="44" aria-label="View painting 45 of 74 full size">
+            <img src="img/img-048.jpg" width="1031" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="45" aria-label="View painting 46 of 74 full size">
+            <img src="img/img-049.jpg" width="926" height="1061" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="46" aria-label="View painting 47 of 74 full size">
+            <img src="img/img-050.jpg" width="954" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="47" aria-label="View painting 48 of 74 full size">
+            <img src="img/img-051.jpg" width="884" height="1042" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="48" aria-label="View painting 49 of 74 full size">
+            <img src="img/img-052.jpg" width="936" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="49" aria-label="View painting 50 of 74 full size">
+            <img src="img/img-053.jpg" width="944" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="50" aria-label="View painting 51 of 74 full size">
+            <img src="img/img-054.jpg" width="971" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="51" aria-label="View painting 52 of 74 full size">
+            <img src="img/img-055.jpg" width="659" height="776" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="52" aria-label="View painting 53 of 74 full size">
+            <img src="img/img-056.jpg" width="847" height="1018" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="53" aria-label="View painting 54 of 74 full size">
+            <img src="img/img-057.jpg" width="1044" height="741" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="54" aria-label="View painting 55 of 74 full size">
+            <img src="img/img-058.jpg" width="1037" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="55" aria-label="View painting 56 of 74 full size">
+            <img src="img/img-059.jpg" width="920" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="56" aria-label="View painting 57 of 74 full size">
+            <img src="img/img-060.jpg" width="1026" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="57" aria-label="View painting 58 of 74 full size">
+            <img src="img/img-061.jpg" width="1026" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="58" aria-label="View painting 59 of 74 full size">
+            <img src="img/img-062.jpg" width="1054" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="59" aria-label="View painting 60 of 74 full size">
+            <img src="img/img-063.jpg" width="1032" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="60" aria-label="View painting 61 of 74 full size">
+            <img src="img/img-064.jpg" width="1021" height="835" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="61" aria-label="View painting 62 of 74 full size">
+            <img src="img/img-065.jpg" width="998" height="429" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="62" aria-label="View painting 63 of 74 full size">
+            <img src="img/img-066.jpg" width="631" height="809" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="63" aria-label="View painting 64 of 74 full size">
+            <img src="img/img-067.jpg" width="1071" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="64" aria-label="View painting 65 of 74 full size">
+            <img src="img/img-068.jpg" width="1062" height="1058" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="65" aria-label="View painting 66 of 74 full size">
+            <img src="img/img-069.jpg" width="998" height="1085" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="66" aria-label="View painting 67 of 74 full size">
+            <img src="img/img-070.jpg" width="867" height="1085" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="67" aria-label="View painting 68 of 74 full size">
+            <img src="img/img-071.jpg" width="874" height="1067" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="68" aria-label="View painting 69 of 74 full size">
+            <img src="img/img-072.jpg" width="889" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="69" aria-label="View painting 70 of 74 full size">
+            <img src="img/img-073.jpg" width="916" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="70" aria-label="View painting 71 of 74 full size">
+            <img src="img/img-074.jpg" width="864" height="1062" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="71" aria-label="View painting 72 of 74 full size">
+            <img src="img/img-075.jpg" width="1085" height="785" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="72" aria-label="View painting 73 of 74 full size">
+            <img src="img/img-076.jpg" width="1082" height="956" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+        <figure class="work">
+          <button class="work-btn" type="button" data-index="73" aria-label="View painting 74 of 74 full size">
+            <img src="img/img-077.jpg" width="794" height="1100" loading="lazy" decoding="async" alt="One of my untitled framed paintings">
+          </button>
+        </figure>
+    </div>
+    <div id="gridPager" hidden>
+      <button class="lb-btn grid-arrow prev" id="gridPrev" type="button" aria-label="Previous group of paintings">&#8592;</button>
+      <span class="grid-counter" id="gridCounter" role="status">Piece 1 / 74</span>
+      <button class="lb-btn grid-arrow next" id="gridNext" type="button" aria-label="Next group of paintings">&#8594;</button>
+    </div>
+  </section>
+
+  <div class="splatter" aria-hidden="true">
+    <img src="img/img-078.png" width="4800" height="535" loading="lazy" decoding="async" alt="">
+  </div>
+
+  <div class="doorway" id="doorway">
+    <div class="doorway-panel">
+      <h2 class="doorway-title">MOSAIC &amp; MURALS</h2>
+      <p class="doorway-sub">My big work lives through here — my 2019 mural, the Moonlyte Brewing wings sign I painted, and The Hydeaway.</p>
+      <button class="door-btn" id="doorEnter" type="button" aria-expanded="false" aria-controls="mosaic">Enter &#8594;</button>
+    </div>
+  </div>
+
+  <section id="mosaic" aria-labelledby="mosaic-h">
+    <div class="room-back">
+      <button class="view-toggle" id="doorBack" type="button">&#8592; Back to Portfolio</button>
+    </div>
+    <div class="section-head">
+      <h2 id="mosaic-h" class="magenta">Mosaic &amp; Murals</h2>
+    </div>
+    <div class="mural-wrap">
+      <div class="mural-frame">
+        <img src="img/img-079.jpg" width="600" height="600" loading="lazy" decoding="async" alt="My outdoor mural">
+      </div>
+      <p class="caption"><b>My mural, 2019.</b></p>
+    </div>
+    <div class="mural-wrap">
+      <img class="mural-photo" src="img/img-080.jpg" width="917" height="1048" loading="lazy" decoding="async" alt="Moonlyte Brewing Co. wings sign I painted, photographed in my workshop">
+      <p class="caption"><b>Moonlyte Brewing Co. &mdash; my wings sign.</b></p>
+    </div>
+    <div class="mural-wrap">
+      <img class="mural-photo" src="img/img-081.jpg" width="1400" height="638" loading="lazy" decoding="async" alt="The Hydeaway mural I painted on the side of the building">
+      <p class="caption"><b>The Hydeaway &mdash; my mural.</b></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="foot-shop"><a class="shop-btn" href="https://fineartamerica.com/profiles/1-corey-templin" target="_blank" rel="noopener">Buy prints</a></p>
+  <p>&copy; <span class="foot-name">Corey Lee</span> &middot; Iron Range, Minnesota</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Painting viewer">
+  <div class="lb-top">
+    <span class="lb-counter" id="lbCounter">1 / 74</span>
+    <span class="lb-title">COREY LEE</span>
+    <button class="lb-btn lb-close" id="lbClose" type="button" aria-label="Close viewer">&times;</button>
+  </div>
+  <div class="lb-stage" id="lbStage">
+    <img id="lbImg" src="img/img-004.jpg" alt="One of my untitled framed paintings, full size">
+  </div>
+  <div class="lb-controls">
+    <button class="lb-btn" id="lbPrev" type="button" aria-label="Previous painting">&#8592; Prev</button>
+    <span class="lb-hint">Arrow keys work too &middot; swipe on touch screens</span>
+    <button class="lb-btn" id="lbNext" type="button" aria-label="Next painting">Next &#8594;</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.work-btn'));
+  var imgs = Array.prototype.slice.call(document.querySelectorAll('#grid .work-btn img'));
+  var suppressClick = false;
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lbImg');
+  var lbCounter = document.getElementById('lbCounter');
+  var lbClose = document.getElementById('lbClose');
+  var lbPrev = document.getElementById('lbPrev');
+  var lbNext = document.getElementById('lbNext');
+  var stage = document.getElementById('lbStage');
+  var current = 0;
+  var lastFocus = null;
+
+  function show(i){
+    current = (i + imgs.length) % imgs.length;
+    lbImg.src = imgs[current].getAttribute('src');
+    lbCounter.textContent = (current + 1) + ' / ' + imgs.length;
+  }
+  function open(i){
+    lastFocus = document.activeElement;
+    show(i);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function close(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click', function(){
+      if (suppressClick) { suppressClick = false; return; }
+      open(parseInt(b.getAttribute('data-index'), 10));
+    });
+  });
+  lbClose.addEventListener('click', close);
+  lbPrev.addEventListener('click', function(){ show(current - 1); });
+  lbNext.addEventListener('click', function(){ show(current + 1); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(current - 1);
+    else if (e.key === 'ArrowRight') show(current + 1);
+  });
+  var startX = null;
+  stage.addEventListener('touchstart', function(e){ startX = e.changedTouches[0].clientX; }, {passive:true});
+  stage.addEventListener('touchend', function(e){
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 48) show(current + (dx < 0 ? 1 : -1));
+    startX = null;
+  }, {passive:true});
+
+  /* ---------- View toggle: walk the wall / view all ---------- */
+  var grid = document.getElementById('grid');
+  var room = document.getElementById('galleryRoom');
+  var viewToggle = document.getElementById('viewToggle');
+  var viewModeLabel = document.getElementById('viewModeLabel');
+  viewToggle.addEventListener('click', function(){
+    if (grid.hasAttribute('hidden')) {
+      grid.removeAttribute('hidden');
+      room.setAttribute('hidden', '');
+      document.getElementById('gridPager').removeAttribute('hidden');
+      viewToggle.textContent = 'Walk the wall';
+      viewToggle.setAttribute('aria-expanded', 'true');
+      viewModeLabel.textContent = 'Viewing all';
+      updateGridPager();
+    } else {
+      grid.setAttribute('hidden', '');
+      room.removeAttribute('hidden');
+      document.getElementById('gridPager').setAttribute('hidden', '');
+      viewToggle.textContent = 'View all';
+      viewToggle.setAttribute('aria-expanded', 'false');
+      viewModeLabel.textContent = 'Walking the wall';
+      updateWall();
+    }
+  });
+
+  /* ---------- Gallery wall: walk, progress, drag ---------- */
+  var wall = document.getElementById('wallScroll');
+  var wallCounter = document.getElementById('wallCounter');
+  var wallFill = document.getElementById('wallFill');
+  var total = imgs.length;
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function wallIndex(){
+    if (!wall.clientWidth) return 0;
+    var i = Math.round(wall.scrollLeft / wall.clientWidth);
+    return Math.max(0, Math.min(total - 1, i));
+  }
+  var wallPrevOverlay = document.getElementById('wallPrevOverlay');
+  var wallNextOverlay = document.getElementById('wallNextOverlay');
+  var wallPrevBtn = document.getElementById('wallPrev');
+  var wallNextBtn = document.getElementById('wallNext');
+  function updateWall(){
+    var i = wallIndex();
+    wallCounter.textContent = 'Piece ' + (i + 1) + ' / ' + total;
+    wallFill.style.width = ((i + 1) / total * 100) + '%';
+    /* Arrows stay visible on every painting — including the first — just dimmed at the ends */
+    wallPrevOverlay.disabled = (i === 0);
+    wallNextOverlay.disabled = (i === total - 1);
+    wallPrevBtn.disabled = (i === 0);
+    wallNextBtn.disabled = (i === total - 1);
+  }
+  function stepWall(dir){
+    wall.scrollBy({left: dir * wall.clientWidth, behavior: reduceMotion ? 'auto' : 'smooth'});
+  }
+  wallPrevBtn.addEventListener('click', function(){ stepWall(-1); });
+  wallNextBtn.addEventListener('click', function(){ stepWall(1); });
+  wallPrevOverlay.addEventListener('click', function(){ stepWall(-1); });
+  wallNextOverlay.addEventListener('click', function(){ stepWall(1); });
+  var wallTick = false;
+  wall.addEventListener('scroll', function(){
+    if (wallTick) return;
+    wallTick = true;
+    window.requestAnimationFrame(function(){ updateWall(); wallTick = false; });
+  }, {passive:true});
+  wall.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowLeft') { e.preventDefault(); stepWall(-1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); stepWall(1); }
+  });
+  var dragX = null, dragScroll = 0, dragged = false;
+  wall.addEventListener('pointerdown', function(e){
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    dragX = e.clientX; dragScroll = wall.scrollLeft; dragged = false;
+  });
+  wall.addEventListener('pointermove', function(e){
+    if (dragX === null) return;
+    var dx = e.clientX - dragX;
+    if (Math.abs(dx) > 5) {
+      dragged = true;
+      wall.classList.add('dragging');
+      wall.scrollLeft = dragScroll - dx;
+    }
+  });
+  function endDrag(){
+    if (dragX !== null && dragged) {
+      suppressClick = true;
+      window.setTimeout(function(){ suppressClick = false; }, 300);
+    }
+    dragX = null; dragged = false;
+    wall.classList.remove('dragging');
+  }
+  wall.addEventListener('pointerup', endDrag);
+  wall.addEventListener('pointercancel', endDrag);
+  wall.addEventListener('pointerleave', endDrag);
+
+  /* ---------- View-all pager: fixed arrows page through the grid ---------- */
+  var pager = document.getElementById('gridPager');
+  var gridWorks = Array.prototype.slice.call(grid.querySelectorAll('.work'));
+  var gridPrev = document.getElementById('gridPrev');
+  var gridNext = document.getElementById('gridNext');
+  var gridCounter = document.getElementById('gridCounter');
+  function gridFirstVisible(){
+    for (var k = 0; k < gridWorks.length; k++){
+      if (gridWorks[k].getBoundingClientRect().bottom > 120) return k;
+    }
+    return gridWorks.length - 1;
+  }
+  function updateGridPager(){
+    if (pager.hasAttribute('hidden')) return;
+    gridCounter.textContent = 'Piece ' + (gridFirstVisible() + 1) + ' / ' + total;
+    var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    gridPrev.disabled = window.scrollY <= 4;
+    gridNext.disabled = window.scrollY >= maxScroll - 4;
+  }
+  function pageGrid(dir){
+    window.scrollBy({top: dir * window.innerHeight * 0.85, behavior: reduceMotion ? 'auto' : 'smooth'});
+    window.setTimeout(updateGridPager, reduceMotion ? 60 : 480);
+  }
+  gridPrev.addEventListener('click', function(){ pageGrid(-1); });
+  gridNext.addEventListener('click', function(){ pageGrid(1); });
+  var gridTick = false;
+  window.addEventListener('scroll', function(){
+    if (pager.hasAttribute('hidden') || gridTick) return;
+    gridTick = true;
+    window.requestAnimationFrame(function(){ updateGridPager(); gridTick = false; });
+  }, {passive:true});
+  window.addEventListener('resize', updateGridPager);
+
+  /* ---------- Doorway: Portfolio room <-> Mosaic & Murals room ---------- */
+  var mosaic = document.getElementById('mosaic');
+  var doorway = document.getElementById('doorway');
+  var doorEnter = document.getElementById('doorEnter');
+  var doorBack = document.getElementById('doorBack');
+  mosaic.setAttribute('hidden', '');
+  function enterMosaic(){
+    mosaic.removeAttribute('hidden');
+    doorway.setAttribute('hidden', '');
+    doorEnter.setAttribute('aria-expanded', 'true');
+    mosaic.classList.remove('room-enter');
+    void mosaic.offsetWidth;
+    mosaic.classList.add('room-enter');
+    mosaic.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
+    var h = document.getElementById('mosaic-h');
+    h.setAttribute('tabindex', '-1');
+    h.focus({preventScroll: true});
+  }
+  function exitMosaic(){
+    mosaic.setAttribute('hidden', '');
+    doorway.removeAttribute('hidden');
+    doorEnter.setAttribute('aria-expanded', 'false');
+    document.getElementById('portfolio').scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
+    viewToggle.focus({preventScroll: true});
+  }
+  doorEnter.addEventListener('click', enterMosaic);
+  doorBack.addEventListener('click', exitMosaic);
+  Array.prototype.slice.call(document.querySelectorAll('.head-nav a[href="#mosaic"]')).forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      if (mosaic.hasAttribute('hidden')) enterMosaic();
+      else mosaic.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block: 'start'});
+    });
+  });
+  updateWall();
+})();
+</script>
+</body>
+</html>
